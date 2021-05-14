@@ -1,0 +1,29 @@
+<div class="row main-body">
+  <div class="col-2 navigation-menu-title">
+    <h3>Navigation</h3>
+  </div>
+  <div class="col">
+    <h2>Media Library Management</h2>
+  </div>
+</div>
+<div class="row content-row">
+  <nav class="col-2 navigation-menu">
+    <ul class="nav nav-pills flex-column">
+      <li class="nav-item">
+        <a class="nav-link"
+           [routerLinkActive]="['active']"
+           [routerLink]="['library']">Library</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           [routerLinkActive]="['active']"
+           [routerLink]="['add-media']">Add Media</a>
+      </li>
+
+    </ul>
+  </nav>
+  <section class="col content">
+    <router-outlet></router-outlet>
+  </section>
+
+</div>

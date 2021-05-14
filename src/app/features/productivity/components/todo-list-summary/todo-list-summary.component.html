@@ -1,5 +1,17 @@
-<div>
+<!-- <div>
   <p>You have {{ summary.totalTodos}} Todos</p>
   <p>{{ summary.complete}} of them are completed</p>
   <p>{{ summary.incomplete }} need done.</p>
-</div>
+</div> -->
+
+<ul class="list-group list-group-horizontal">
+  <li #allTodos
+      class="list-group-item"
+      (click)='setSelectedClass("allTodos")'>You have {{summary.totalTodos}} ToDos</li>
+  <li #completeTodos
+      class="list-group-item"
+      (click)='setSelectedClass("completeTodos")'>{{summary.complete}} of them are completed</li>
+  <li #notCompleteTodos
+      class="list-group-item"
+      (click)='setSelectedClass("notCompleteTodos")'>{{summary.incomplete}} need to be done</li>
+</ul>

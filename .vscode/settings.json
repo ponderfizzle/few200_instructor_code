@@ -7,9 +7,9 @@
     "statusBar.background": "#1857a4",
     "statusBar.foreground": "#e7e7e7",
     "statusBarItem.hoverBackground": "#1f6fd0",
-    // "activityBar.activeBackground": "#1f6fd0",
-    // "activityBar.activeBorder": "#ee90bb",
-    // "activityBar.background": "#1f6fd0"
+    "activityBar.activeBackground": "#1f6fd0",
+    "activityBar.activeBorder": "#ee90bb",
+    "activityBar.background": "#1f6fd0"
   },
   "docker.commands.run": "docker run -d ${exposedPorts} ${tag}",
   "peacock.color": "#1857a4",
@@ -27,7 +27,6 @@
   "files.autoSave": "onFocusChange",
   "typescript.check.npmIsInstalled": true,
   "editor.snippetSuggestions": "top",
-  "workbench.editor.labelFormat": "medium",
   "editor.lineHeight": 28,
   "editor.minimap.enabled": false,
   "window.zoomLevel": 0,
@@ -60,5 +59,6 @@
     "style.css",
     "${fileBasenameNoExtension}.css"
   ],
-  "peacock.affectTitleBar": false
+  "peacock.affectTitleBar": false,
+  "workbench.editor.labelFormat": "short"
 }

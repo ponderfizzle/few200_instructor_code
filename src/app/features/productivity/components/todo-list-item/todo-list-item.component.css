@@ -1,3 +1,5 @@
 .card {
   margin-bottom: 2%;
+  margin-top: 10px;
+  border: thin solid #1f3a93;
 }

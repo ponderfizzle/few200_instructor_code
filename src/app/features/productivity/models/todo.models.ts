@@ -18,3 +18,17 @@ export interface TodoListSummary {
   incomplete: number;
   complete: number;
 }
+
+/*
+TodoListMomdel{
+  list: [
+    {
+      id: "something",
+      description: "something",
+      project: "maybe",
+      completed: false,
+      saved: true
+    }
+  ]
+}
+*/

@@ -16,6 +16,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { CounterEffects } from './effects/counter.effects';
 import { AppEffects } from './effects/app.effects';
 import { ProductivityModule } from './features/productivity/productivity.module';
+import { InventoryModule } from './features/inventory/inventory.module';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { ProductivityModule } from './features/productivity/productivity.module'
   imports: [
     BrowserModule,
     ProductivityModule,
+    InventoryModule,
     AppRoutingModule,
     StoreModule.forRoot(reducers),
     StoreDevtoolsModule.instrument(),

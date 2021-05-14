@@ -1,0 +1,13 @@
+.line-content {
+  margin-top: 20px;
+}
+
+.form-check-input {
+  margin-left: -1.4em;
+}
+
+.form-check-input[type=checkbox] {
+  border-color: rgb(18, 243, 18);
+  color:rgb(18, 243, 18);
+  background-color: transparent;
+}
