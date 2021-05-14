@@ -18,6 +18,13 @@ const mediaLibrary: MediaLibraryModel = {
       cost: 39.99,
       format: MediaFormat.blurayMovie,
       onLoan: true
+    },
+    {
+      title: "Let the Bad Times Roll",
+      releaseDate: '5/07/2021',
+      cost: 12.99,
+      format: MediaFormat.mp3Music,
+      onLoan: false
     }
   ],
   giveMetheName() {
