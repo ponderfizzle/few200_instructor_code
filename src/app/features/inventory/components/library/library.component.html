@@ -1,50 +1,15 @@
 <div class="line-content">
   <ol>
-    <li>
+    <li *ngFor="let item of (mediaLibrary$ | async)">
       <div class="form-check">
         <input class="form-check-input"
+               [checked]="item.onLoan==true"
                type="checkbox"
                value=""
                id="flexCheckDefault">
         <label class="form-check-label"
                for="flexCheckDefault">
-          Title: One Punch Man, Release Date: August 20th, 2018, Cost: $49.99, Format: Bluray
-        </label>
-      </div>
-    </li>
-    <li>
-      <div class="form-check">
-        <input class="form-check-input"
-               type="checkbox"
-               value=""
-               id="flexCheckDefault">
-        <label class="form-check-label"
-               for="flexCheckDefault">
-          Title: One Punch Man, Release Date: August 20th, 2018, Cost: $49.99, Format: Bluray
-        </label>
-      </div>
-    </li>
-    <li>
-      <div class="form-check">
-        <input class="form-check-input"
-               type="checkbox"
-               value=""
-               id="flexCheckDefault">
-        <label class="form-check-label"
-               for="flexCheckDefault">
-          Title: One Punch Man, Release Date: August 20th, 2018, Cost: $49.99, Format: Bluray
-        </label>
-      </div>
-    </li>
-    <li>
-      <div class="form-check">
-        <input class="form-check-input"
-               type="checkbox"
-               value=""
-               id="flexCheckDefault">
-        <label class="form-check-label"
-               for="flexCheckDefault">
-          Title: One Punch Man, Release Date: August 20th, 2018, Cost: $49.99, Format: Bluray
+          Title: {{item?.title}}, Release Date: {{item?.releaseDate}}, Cost: {{item?.cost}}, Format: {{item?.format}}
         </label>
       </div>
     </li>

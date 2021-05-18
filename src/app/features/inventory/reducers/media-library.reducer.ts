@@ -13,8 +13,8 @@ const mediaLibrary: MediaLibraryModel = {
       onLoan: false
     },
     {
-      title: "Amagi Park",
-      releaseDate: '5/14/2015',
+      title: "Goblin Slayer",
+      releaseDate: '5/14/2019',
       cost: 39.99,
       format: MediaFormat.blurayMovie,
       onLoan: true
@@ -26,13 +26,13 @@ const mediaLibrary: MediaLibraryModel = {
       format: MediaFormat.mp3Music,
       onLoan: false
     }
-  ],
-  giveMetheName() {
-
-  }
+  ]
 }
 
-const mediaLibraryReducer = createReducer(mediaLibrary);
+
+const mediaLibraryReducer = createReducer(
+  mediaLibrary,
+  on(actions.loadMediaLibrary, (state, action) => ({ ...state, ...action })));
 
 export function reducer(state: MediaLibraryModel = mediaLibrary, action: Action): MediaLibraryModel {
   return mediaLibraryReducer(state, action);

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { MediaItem, MediaLibraryModel } from '../../models';
+import { MediaLibraryState, selectMediaList } from '../../reducers';
 
 @Component({
   selector: 'app-library',
@@ -7,9 +11,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LibraryComponent implements OnInit {
 
-  constructor() { }
+  mediaLibrary$: Observable<MediaItem[]>;
+
+  constructor(private store: Store<MediaLibraryState>) { }
 
   ngOnInit(): void {
+    this.mediaLibrary$ = this.store.select(selectMediaList);
   }
 
 }

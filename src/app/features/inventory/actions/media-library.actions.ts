@@ -16,7 +16,7 @@ export const loadMediaLibrary = createAction(
 
 export const addMedia = createAction(
   '[mediaLibrary] add media',
-  props<{ title: string, releaseDate: string, cost: number, format: MediaFormat.blurayMovie, onLoan: boolean }>()
+  props<{ title: string, releaseDate: string, cost: number, format: MediaFormat, onLoan: boolean }>()
 )
 
 

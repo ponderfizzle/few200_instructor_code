@@ -1,8 +1,7 @@
 import { MediaFormat } from "../enums/media-format.enum";
 
 export interface MediaLibraryModel {
-  mediaList: MediaItem[],
-  giveMetheName()
+  mediaList: MediaItem[]
 }
 
 export interface MediaItem {
